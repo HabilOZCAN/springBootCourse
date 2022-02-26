@@ -26,11 +26,6 @@ public abstract class Worker implements WorkerInterface{
                 '}';
     }
 
-    @Override
-    public int getWorkHoursPerWeek() {
-        return this.workHoursPerWeek;
-    }
-
 
     @Override
     public int getWageEarned(){
