@@ -26,7 +26,6 @@ public class ApplicationRunner {
             }
         }
 
-        workers.forEach(Worker::toString);
         workers.forEach(ApplicationRunner::printWage);
         System.out.println("-----------AFTER ONE WEEK WORK-----------------");
         workers.forEach(Worker::works);
@@ -34,7 +33,7 @@ public class ApplicationRunner {
     }
     private static void printWage(Worker worker){
         System.out.println(worker);
-        System.out.println("This worker totally Earned"+worker.getWageEarned()+"$");
+        System.out.println("This worker totally Earned "+worker.getWageEarned()+" $");
     }
 }
 
