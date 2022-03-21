@@ -8,6 +8,10 @@ import java.util.UUID;
 
 @Entity
 public class LazyWorkerEntity extends WorkerEntity {
+
+    public LazyWorkerEntity() {
+    }
+
     public LazyWorkerEntity(UUID id, String firstName, String lastName, WorkerTypes type) {
         super.id = id;
         super.firstName = firstName;

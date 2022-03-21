@@ -8,6 +8,10 @@ import java.util.UUID;
 
 @Entity
 public class ChildWorkerEntity extends WorkerEntity {
+
+    public ChildWorkerEntity() {
+    }
+
     public ChildWorkerEntity(UUID id, String firstName, String lastName, WorkerTypes type) {
         super.id = id;
         super.firstName = firstName;

@@ -6,6 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.UUID;
 
-public interface WorkerRepository extends JpaRepository<WorkerEntity, UUID> {
+public interface WorkerRepository extends CrudRepository<WorkerEntity, UUID> {
 
 }
