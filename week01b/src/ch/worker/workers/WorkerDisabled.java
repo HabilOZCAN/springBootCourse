@@ -1,6 +1,5 @@
 package ch.worker.workers;
 
-
 import ch.worker.model.Worker;
 
 public class WorkerDisabled extends Worker {
