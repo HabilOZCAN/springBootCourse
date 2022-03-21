@@ -4,7 +4,6 @@ import com.farm.demo.controller.model.workers.WorkerTypes;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.UUID;
 
@@ -12,7 +11,7 @@ import java.util.UUID;
 public class WorkerEntity {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(generator = "UUID")
     protected UUID id;
 
     protected String firstName;
